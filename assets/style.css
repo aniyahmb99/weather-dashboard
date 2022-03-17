@@ -161,78 +161,75 @@ h2 {
 
 .forecast-title {
     display: flex;
-    position: absolute;
-    right: 57%;
-    top: 42%;
-    left: 31%;
 }
 
 .bottom-section {
-    width: 100%;
-    height: auto;
-    
+    margin-top: 25px;
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    padding-left: 100px;
+
 }
 
 .blocksAll {
     width: 100%;
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
-    position: absolute;
-    top: 50%;
-    left: 32%;
-    flex-direction: row;
-    background-color: #1c2c3b;
     color: white;
     font-weight: lighter;
     text-align: left;
+   
+    
+
 } 
 h3 {
     font-weight: bold;
-    padding: 3px 0 0 2px;
+    position: relative;
+    top: 20%;
     margin-left: 20px;
 }
 
 .block1 {
-    margin: 0 10px 0 3px;
-    padding: 3px 0 5px 2px;
+    margin: 0 20px 0 15px;
     height: 250px;
-    width: 10%;
     display: inline-flex;
     justify-content: space-evenly;
+    
 }
 .block2 {
-    margin: 0 10px 0 3px;
+    margin: 0 20px 0 3px;
     padding: 3px 0 5px 2px;
     height: 250px;
-    width: 10%;
+    
     display: inline-flex;
     justify-content: space-evenly;
 }
 
 .block3 {
-    margin: 0 10px 0 3px;
+    margin: 0 20px 0 3px;
     padding: 3px 0 5px 2px;
     height: 250px;
-    width: 10%;
+
     display: inline-flex;
     justify-content: space-evenly;
 }
 
 
 .block4 {
-    margin: 0 10px 0 3px;
+    margin: 0 20px 0 3px;
     padding: 3px 0 5px 2px;
     height: 250px;
-    width: 10%;
+    
     display: inline-flex;
     justify-content: space-evenly;
+    
 }
 
 .block5 {
-    margin: 0 5px 0 3px;
+    margin: 0 20px 0 3px;
     padding: 3px 5px 5px 2px;
     height: 250px;
-    width: 10%;
     display: inline-flex;
     justify-content: space-evenly;
 }
@@ -244,7 +241,17 @@ h3 {
 
 }
 
-li {
+ .blocktext {
     position: relative;
     top: 30%;
+    left: 0;
+    right: 20%;
+    padding: 0 10px 5px 0; 
+    
+}
+
+.card {
+    width: 150px;
+    background-color: #1c2c3b;
+    
 }
