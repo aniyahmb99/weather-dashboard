@@ -14,7 +14,7 @@ var saveCity = function () {
 
 var getCoordinates = function (coordinates) {
 
-    var geocodingUrl = "http://api.openweathermap.org/geo/1.0/direct?q=London,826&limit=1&appid=974fa9cd5b93c10b8e96c09931208dc7";
+    var geocodingUrl = "http://api.openweathermap.org/geo/1.0/direct?q={city name},{state code},{country code}&limit={limit}&appid={APIkey}";
 
     fetch(geocodingUrl).then(function (respone) {
         // if request is successful
@@ -28,9 +28,9 @@ var getCoordinates = function (coordinates) {
 };
 btn.addEventListener("click", saveCity);
 
-// api key: 974fa9cd5b93c10b8e96c09931208dc7
 
-// var oneCallUrl = https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key}
+
+// var oneCallUrl = https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part}&appid={APIkey}
 
 // // cityname to lat/long converter API
-// var geocodingUrl = http://api.openweathermap.org/geo/1.0/direct?q={city name},{state code},{country code}&limit={limit}&appid={API key}
+// var geocodingUrl = http://api.openweathermap.org/geo/1.0/direct?q={city name},{state code},{country code}&limit={limit}&appid={APIkey}
