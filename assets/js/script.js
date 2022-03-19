@@ -2,35 +2,28 @@ var currentTemp = document.getElementById("#temp");
 var currentWind = document.getElementById("#wind");
 var currentHumidity = document.getElementById("#humidity");
 var UVIndex = document.getElementById("#UVIndex");
-
+var searchHistory = JSON.parse(localStorage.getItem("#city")); // ??
 var btn = document.querySelector("#btn");
 
-// save user's city into a variable?
+// save user's city into a variable? 
 var saveCity = function () {
     event.preventDefault();
     var city = document.getElementById("city").value;
     localStorage.setItem("city", city);
 };
 
-var getCoordinates = function (coordinates) {
+var getCoords = function (cityName) {
+    var lat = ;
+    var lon = ;
+    fetch('https://api.openweathermap.org/data/2.5/onecall?lat=' + lat + '&lon=' + lon + '&appid=974fa9cd5b93c10b8e96c09931208dc7');
+        .then(response => response.json())
+    .then(data => console.log(data))
 
-    var geocodingUrl = "http://api.openweathermap.org/geo/1.0/direct?q={city name},{state code},{country code}&limit={limit}&appid={APIkey}";
+}
 
-    fetch(geocodingUrl).then(function (respone) {
-        // if request is successful
-        if (Response.ok) {
-            Response.json().then(function (data) {
-                secondFunction(data); // fix name later
-            }
-            )
-        }
-    })
-};
+getCoords();
+
 btn.addEventListener("click", saveCity);
 
 
 
-// var oneCallUrl = https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part}&appid={APIkey}
-
-// // cityname to lat/long converter API
-// var geocodingUrl = http://api.openweathermap.org/geo/1.0/direct?q={city name},{state code},{country code}&limit={limit}&appid={APIkey}
