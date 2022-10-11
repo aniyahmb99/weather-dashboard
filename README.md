@@ -1,5 +1,10 @@
 # WEATHER DASHBOARD
 
+## Screenshots
+
+Home Page
+![image](https://user-images.githubusercontent.com/96402809/195168794-85df7fd0-f1d7-4b65-8f91-a9caec922f90.png)
+
 ## DESCRIPTION
 
 This app allows users to search for a city and check the weather and forecast up to 5 days in advance.
@@ -25,12 +30,6 @@ User can search for a city and view the current and accurate weather forecast as
 
 ## Technologies
 HTML, CSS, JAVASCRIPT
-
-
-## Screenshots
-
-Home Page
-![image]()
 
 ## Contributors
 Aniyah Butler
